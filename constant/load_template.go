@@ -2,11 +2,11 @@ package constant
 
 // a package to get html template type in golang
 import (
-	"fmt"
+	// "fmt"
 	"html/template"
 	"io"
-	"os"
-	"path/filepath"
+	// "os"
+	// "path/filepath"
 
 	"github.com/labstack/echo/v4"
 )
@@ -29,17 +29,17 @@ func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Con
 // define where to find template folder
 func LoadTemplate() *Template {
 	//get os path
-	path, _ := os.Executable()
+	// path, _ := os.Executable()
 
-	// get file path without the app added to it
-	filePath := filepath.Dir(path)
+	// // get file path without the app added to it
+	// filePath := filepath.Dir(path)
 
-	//template location
-	templateFolder := fmt.Sprintf("%v/repository/templates/*", filePath)
+	// //template location
+	// templateFolder := fmt.Sprintf("%v/repository/templates/*", filePath)
 
 	//get path to template folder
 	template := &Template{
-		templates: template.Must(template.ParseGlob(templateFolder)),
+		templates: template.Must(template.ParseGlob("repository/templates/*")),
 	}
 
 	//return template path

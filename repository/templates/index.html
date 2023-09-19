@@ -89,10 +89,10 @@
 
                         <div class="step" data-step-id='2'>
                             <div class="step-label">Color of Maize?</div>
-                            <label class="checkbox-inline"><input type="checkbox" value="White" name="corn_color"> White</label>
-                            <label class="checkbox-inline"><input type="checkbox" value="Yellow" name="corn_color"> Yellow</label>
-                            <label class="checkbox-inline"><input type="checkbox" value="Bicolor" name="corn_color"> Bicolor (White & Yellow)</label>
-                            <label class="checkbox-inline"><input type="checkbox" value="Red" name="corn_color"> Red</label>
+                            <label class="radio-inline"><input type="radio" value="White" name="corn_color"> White</label>
+                            <label class="radio-inline"><input type="radio" value="Yellow" name="corn_color"> Yellow</label>
+                            <label class="radio-inline"><input type="radio" value="Bicolor" name="corn_color"> Bicolor (White & Yellow)</label>
+                            <label class="radio-inline"><input type="radio" value="Red" name="corn_color"> Red</label>
                             <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>
                         </div>  
 
@@ -104,7 +104,7 @@
 
 
                         <div class="step step-confirm" data-step-id='4' style="height:600px;">
-                            <form action="/record" method="post" name='signupForm' autocomplete="off" class="form-horizontal">
+                            <form action="/record" method="post" autocomplete="off" class="form-horizontal">
                                 <!-- csrf token -->
                                 <input type="hidden" name="csrf" value="{{.csrf}}">
 
@@ -127,10 +127,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="control-label col-md-4">Corn Colour</div>
+                                    <div class="control-label col-md-4">Corn Color</div>
                                     <div class="col-md-8">
                                         <div class="input-container">
-                                            <select name="corn_colour" class="selectpicker form-control" multiple="multiple" >
+                                            <select name="corn_color" class="selectpicker form-control">
                                                 <option value="White"> White</option>
                                                 <option value="Yellow"> Yellow</option>
                                                 <option value="Bicolor"> Bicolor (White & Yellow)</option>

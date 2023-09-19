@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/labstack/echo/v4"
-	database "github.com/ujblockchain/echobootcamp/10-preparing_for_deployment/db/product"
+	database "github.com/OTeeEnabor/echobootcamp/db/product"
 )
 
 func FormContext(c echo.Context) error {

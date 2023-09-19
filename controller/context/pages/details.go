@@ -3,8 +3,8 @@ package pages
 import (
 	"net/http"
 
+	"github.com/OTeeEnabor/echobootcamp/db/product"
 	"github.com/labstack/echo/v4"
-	"github.com/ujblockchain/echobootcamp/10-preparing_for_deployment/db/product"
 )
 
 func DetailsContext(c echo.Context) error {
